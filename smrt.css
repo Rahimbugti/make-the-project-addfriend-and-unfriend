@@ -3,56 +3,41 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
  }
  html,body{
     height: 100%;
     width: 100%;
  }
- body {
-    background-color: cornflowerblue;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+ #main{
+  height: 100%;
+  background-color: black;
+  position: relative;
  }
- .card{
-    height: 400px;
-    width: 300px;
-    background-color: yellow;
-    padding: 30px;
-    align-items: center;
- }
- .card img{
-    height: 50%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    padding: 20px;
-    border-radius: 10px;
- }
- .card h1{
-    font-size: 30px
-        
- }
- .card h5{
-    font-size: 25px;
-    color: darkcyan;
-    padding-bottom:25px;
-    margin-top: 20px ;
-    margin-left: 20px;
-    
- }
- .card button{
-    background-color: cadetblue;
-    color: white;
-    font-weight: 700;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    padding: 10px 20px;
+ #elem{
+  height: 100px;
+  width: 100%;
+  border-bottom: 3px solid blue ;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+
 
  }
- .card .Remove{
-    background-color: #dadada;
-    color: black;
+ .ele, h1{
+   font-size: 6vw;
+   position: relative;
+   z-index: 9;
+   mix-blend-mode: difference
+ }
+ #elem img{
+   height: 100px;
+   width: 100px;
+   object-fit: cover;
+   position: absolute;
+   object-position: center;
+   border-radius: 50%;
+   transition: all linear 0.3s;
+   transform: translate(-50%, -50%);
+   opacity: 0;;
  }
